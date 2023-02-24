@@ -1,0 +1,26 @@
+[
+	{
+        "first_name": "Gary",
+        "last_name": "Ortiz",
+        "email": "gortiz0@mapy.cz",
+        "country": "Indonesia",
+        "modified": "2015-05-16",
+        "vip": false
+    },
+    {
+        "first_name": "Albert",
+        "last_name": "Williamson",
+        "email": "awilliamson1@narod.ru",
+        "country": "China",
+        "modified": "2015-03-11",
+        "vip": true
+    },
+    {
+        "first_name": "Mildred",
+        "last_name": "Fuller",
+        "email": "mfuller2@npr.org",
+        "country": "Peru",
+        "modified": "2015-02-15",
+        "vip": true
+    }
+]

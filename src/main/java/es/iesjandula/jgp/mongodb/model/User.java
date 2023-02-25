@@ -4,33 +4,50 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+/**
+ * @author Jesús García Puerto
+ *
+ */
 @Document(collection = "user")
 public class User
 {
 	@Id
-	private String id;
+	private Long id;
+	
 	@Field(name = "first_name")
+	@JsonProperty(value = "first_name")
 	private String firstName;
+	
 	@Field(name = "last_name")
+	@JsonProperty(value = "last_name")
 	private String lastName;
+	
+	private int age;
+	
 	private String email;
+	
 	private String country;
+	
 	private String modified;
+	
 	private boolean vip;
 
-	public String getId()
+	//getters and setters
+	public Long getId()
 	{
-		return id;
+		return this.id;
 	}
 
-	public void setId(String id)
+	public void setId(Long id)
 	{
 		this.id = id;
 	}
 
 	public String getFirstName()
 	{
-		return firstName;
+		return this.firstName;
 	}
 
 	public void setFirstName(String firstName)
@@ -40,17 +57,27 @@ public class User
 
 	public String getLastName()
 	{
-		return lastName;
+		return this.lastName;
 	}
 
 	public void setLastName(String lastName)
 	{
 		this.lastName = lastName;
 	}
+	
+	public int getAge()
+	{
+		return this.age;
+	}
+
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
 
 	public String getEmail()
 	{
-		return email;
+		return this.email;
 	}
 
 	public void setEmail(String email)
@@ -60,7 +87,7 @@ public class User
 
 	public String getCountry()
 	{
-		return country;
+		return this.country;
 	}
 
 	public void setCountry(String country)
@@ -70,7 +97,7 @@ public class User
 
 	public String getModified()
 	{
-		return modified;
+		return this.modified;
 	}
 
 	public void setModified(String modified)
@@ -80,7 +107,7 @@ public class User
 
 	public boolean isVip()
 	{
-		return vip;
+		return this.vip;
 	}
 
 	public void setVip(boolean vip)
@@ -91,7 +118,7 @@ public class User
 	@Override
 	public String toString()
 	{
-		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-				+ ", country=" + country + ", modified=" + modified + ", vip=" + vip + "]";
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", email="
+				+ email + ", country=" + country + ", modified=" + modified + ", vip=" + vip + "]";
 	}
 }

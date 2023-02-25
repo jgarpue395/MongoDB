@@ -1,26 +1,42 @@
 [
-	{
+    {
+        "id": 1,
         "first_name": "Gary",
         "last_name": "Ortiz",
+        "age": 18,
         "email": "gortiz0@mapy.cz",
         "country": "Indonesia",
         "modified": "2015-05-16",
         "vip": false
     },
     {
+        "id": 2,
         "first_name": "Albert",
         "last_name": "Williamson",
+        "age": 20,
         "email": "awilliamson1@narod.ru",
         "country": "China",
         "modified": "2015-03-11",
         "vip": true
     },
     {
+        "id": 3,
         "first_name": "Mildred",
         "last_name": "Fuller",
+        "age": 18,
         "email": "mfuller2@npr.org",
         "country": "Peru",
         "modified": "2015-02-15",
+        "vip": true
+    },
+    {
+        "id": 4,
+        "first_name": "Gary",
+        "last_name": "Fuller",
+        "age": 22,
+        "email": "gfull@mongo.db",
+        "country": "Spain",
+        "modified": "2015-05-16",
         "vip": true
     }
 ]
